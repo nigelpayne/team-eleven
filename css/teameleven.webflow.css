@@ -1,3 +1,14 @@
+.w-backgroundvideo-backgroundvideoplaypausebutton:focus-visible {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: #3b79c3;
+}
+
 body {
   background-color: #3c3c3b;
   font-family: neue-haas-grotesk-text, sans-serif;
@@ -292,6 +303,21 @@ strong {
   padding: 20px;
 }
 
+.play-pause-button {
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.pause-state {
+  display: none;
+}
+
+.play-state {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .page-wrapper {
     height: auto;
@@ -391,6 +417,14 @@ strong {
   .social-link.first {
     margin-right: 30px;
     margin-left: 30px;
+  }
+
+  .play-pause-button {
+    display: block;
+  }
+
+  .play-state {
+    display: none;
   }
 }
 
